@@ -9,12 +9,12 @@ class Key {
 };
 
 class Person { 
-    key: Key
+   private key: Key
     constructor(key: Key) { 
         this.key = key;
     }
     public getKey()  { 
-       return this.key.getSignature();
+       return this.key;
     }
 }
 
@@ -48,9 +48,8 @@ class MyHouse extends House {
 const key1 = new Key();
 const owner = new Person(key1);
 const myHouse = new MyHouse(key1, 'close');
-owner.getKey();
 
-myHouse.openDoor(owner.key);
+myHouse.openDoor(owner.getKey());
 myHouse.comeIn(owner);
 console.log(myHouse.tenants);
 console.log(myHouse.key);
