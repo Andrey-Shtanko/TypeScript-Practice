@@ -8,15 +8,15 @@ class Key {
     }
 };
 
-class Person { 
-   private key: Key
-    constructor(key: Key) { 
-        this.key = key;
-    }
-    public getKey()  { 
-       return this.key;
-    }
-}
+// class Person { 
+//    private key: Key
+//     constructor(key: Key) { 
+//         this.key = key;
+//     }
+//     public getKey()  { 
+//        return this.key;
+//     }
+// }
 
 
 
@@ -45,14 +45,14 @@ class MyHouse extends House {
 };
 
 
-const key1 = new Key();
-const owner = new Person(key1);
-const myHouse = new MyHouse(key1, 'close');
+// const key1 = new Key();
+// const owner = new Person(key1);
+// const myHouse = new MyHouse(key1, 'close');
 
-myHouse.openDoor(owner.getKey());
-myHouse.comeIn(owner);
-console.log(myHouse.tenants);
-console.log(myHouse.key);
+// myHouse.openDoor(owner.getKey());
+// myHouse.comeIn(owner);
+// console.log(myHouse.tenants);
+// console.log(myHouse.key);
 
 /**
  * ///////////////////////////////////КОД ВЫШЕ РАБЛОТАЕТ, НО  /////////////////////////
